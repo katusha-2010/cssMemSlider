@@ -1,0 +1,225 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+body {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgb(71, 71, 71);
+}
+.slider-wrapper {
+    margin: 0 auto;
+    width: 400%;
+    height: 100%;
+    overflow: hidden;
+}
+
+@media (max-width: 769px) {
+    .slider-wrapper {       
+        height: 62%;        
+    }
+}
+
+@media (max-width: 600px) {
+    .slider-wrapper {       
+        height: 16%;        
+    }
+}
+
+.slide {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    transition: all 0.8s ease;
+}
+
+img {    
+    width: 1000px;
+    margin-left: auto ;
+    margin-right: auto;
+}
+
+@media (max-width: 1279px) {
+    img {
+        width: 700px;        
+    }
+}
+
+@media (max-width: 769px) {
+    img {
+        width: 500px;
+        height: 400px;        
+    }
+}
+
+@media (max-width: 600px) {
+    img {
+        width: 300px;
+        height: 155px;        
+    }
+}
+
+body input {
+    visibility: hidden;
+}
+
+.image-wrapper {
+    display: flex;
+    height: 100%;
+}
+
+#switch1:checked ~ footer .controls .b1,
+#switch2:checked ~ footer .controls .b2,
+#switch3:checked ~ footer .controls .b3,
+#switch4:checked ~ footer .controls .b4 {
+    background-color: black;
+    border: 4px solid black;
+    transition: all 0.8s ease;
+}
+
+#switch1:checked ~ footer .controls .b1:hover,
+#switch2:checked ~ footer .controls .b2:hover,
+#switch3:checked ~ footer .controls .b3:hover,
+#switch4:checked ~ footer .controls .b4:hover {
+    background-color: white;
+    transition: all 0.8s ease;
+}
+
+#switch1:checked ~ .slider-wrapper .image-wrapper .s1 {
+    margin-left: 0;
+ }
+ 
+ #switch2:checked ~ .slider-wrapper .image-wrapper .s1 {
+    margin-left: -25%;
+ }
+ 
+ #switch3:checked ~ .slider-wrapper .image-wrapper .s1 {
+    margin-left: -50%;
+ }
+ 
+ #switch4:checked ~ .slider-wrapper .image-wrapper .s1 {
+    margin-left: -75%;
+ }
+ 
+
+footer {
+    display: flex;
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+@media (max-width: 1279px) {
+    footer {
+        width: 700px;
+    }
+}
+
+@media (max-width: 1199px) {
+    footer {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+.controls {
+    display: flex;
+    margin-left: auto;    
+}
+
+@media (max-width: 1199px) {
+    .controls {
+        margin-left: 0;
+        order: -1;
+    }
+}
+
+.button {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 3px;
+    background-color: #cccccc;
+    border: 4px solid white;
+    border-radius: 50%;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.8);
+    transition: background-color 0.2s;
+    cursor: pointer;
+    transition: all 0.8s ease;
+}
+
+.button:hover {
+    background-color: black;
+    transition: all 0.8s ease;
+}
+
+.text-wrapper {
+    margin: 0 auto;
+    width: 100%;
+    height: 25%;
+    overflow: hidden;
+}
+
+@media (max-width: 600px) {
+    .text-wrapper {
+        height: 24%;
+    }
+}
+
+.text-all {
+    display: flex;
+    flex-direction: column;
+    transition: all 0.8s ease;
+}
+
+.text {
+    font-size: 25px;
+    color: white;
+    height: 25%;
+    display: flex;    
+}
+
+@media (max-width: 1199px) {
+    .text {
+        justify-content: center;        
+    }
+}
+
+@media (max-width: 600px) {
+    .text {
+        font-size: 20px;
+        margin-bottom: 5px;        
+    }
+}
+
+#switch1:checked ~ footer .text-wrapper .text-all {
+    transform: translateY(0);
+ }
+ 
+ #switch2:checked ~ footer .text-wrapper .text-all {
+    transform: translateY(-28.7px);
+ }
+ 
+ #switch3:checked ~ footer .text-wrapper .text-all {
+    transform: translateY(-57.4px);
+ }
+ 
+ #switch4:checked ~ footer .text-wrapper .text-all {
+    transform: translateY(-86.1px);
+ }
