@@ -138,6 +138,18 @@ footer {
     }
 }
 
+@media (max-width: 769px) {
+    footer {
+        width: 31.25rem;        
+    }
+}
+
+@media (max-width: 600px) {
+    footer {
+        width: 18.75rem;       
+    }
+}
+
 .controls {
     display: flex;
     margin-left: auto;    
@@ -197,7 +209,7 @@ footer {
 
 @media (max-width: 1199px) {
     .text {
-        justify-content: center;        
+        justify-content: left;        
     }
 }
 
