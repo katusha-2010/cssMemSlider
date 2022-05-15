@@ -87,7 +87,7 @@ body input {
 #switch3:checked ~ footer .controls .b3,
 #switch4:checked ~ footer .controls .b4 {
     background-color: black;
-    border: 4px solid black;
+    border: 0.25rem solid black;
     transition: all 0.8s ease;
 }
 
@@ -154,11 +154,11 @@ footer {
     display: inline-block;
     width: 1.25rem;
     height: 1.25rem;
-    margin: 0 3px;
+    margin: 0 0.1875rem;
     background-color: #cccccc;
-    border: 4px solid white;
+    border: 0.25rem solid white;
     border-radius: 50%;
-    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 0px 0.125rem rgba(0, 0, 0, 0.8);
     transition: background-color 0.2s;
     cursor: pointer;
     transition: all 0.8s ease;
@@ -189,7 +189,7 @@ footer {
 }
 
 .text {
-    font-size: 25px;
+    font-size: 1.5625rem;
     color: white;
     height: 25%;
     display: flex;    
@@ -203,7 +203,7 @@ footer {
 
 @media (max-width: 600px) {
     .text {
-        font-size: 20px;
+        font-size: 1.25rem;
         margin-bottom: 0.3125rem;        
     }
 }
