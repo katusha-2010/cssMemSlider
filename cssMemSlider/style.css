@@ -36,7 +36,7 @@ body {
 
 @media (max-width: 600px) {
     .slider-wrapper {       
-        height: 24%;        
+        height: 31%;        
     }
 }
 
@@ -48,28 +48,28 @@ body {
 }
 
 img {    
-    width: 1000px;
+    width: 62.5rem;
     margin-left: auto ;
     margin-right: auto;
 }
 
 @media (max-width: 1279px) {
     img {
-        width: 700px;        
+        width: 43.75rem;        
     }
 }
 
 @media (max-width: 769px) {
     img {
-        width: 500px;
-        height: 400px;        
+        width: 31.25rem;
+        height: 25rem;        
     }
 }
 
 @media (max-width: 600px) {
     img {
-        width: 300px;
-        height: 155px;        
+        width: 18.75rem;
+        height: 10.6875rem;        
     }
 }
 
@@ -118,15 +118,15 @@ body input {
 
 footer {
     display: flex;
-    width: 1000px;
+    width: 62.5rem;
     display: flex;
     justify-content: space-between;
-    margin: 20px;
+    margin: 1.25rem;
 }
 
 @media (max-width: 1279px) {
     footer {
-        width: 700px;
+        width: 43.75rem;
     }
 }
 
@@ -152,8 +152,8 @@ footer {
 
 .button {
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 1.25rem;
+    height: 1.25rem;
     margin: 0 3px;
     background-color: #cccccc;
     border: 4px solid white;
@@ -204,7 +204,7 @@ footer {
 @media (max-width: 600px) {
     .text {
         font-size: 20px;
-        margin-bottom: 5px;        
+        margin-bottom: 0.3125rem;        
     }
 }
 
@@ -213,13 +213,13 @@ footer {
  }
  
  #switch2:checked ~ footer .text-wrapper .text-all {
-    transform: translateY(-28.7px);
+    transform: translateY(-1.7937rem);
  }
  
  #switch3:checked ~ footer .text-wrapper .text-all {
-    transform: translateY(-57.4px);
+    transform: translateY(-3.4rem);
  }
  
  #switch4:checked ~ footer .text-wrapper .text-all {
-    transform: translateY(-86.1px);
+    transform: translateY(-5.3812rem);
  }
