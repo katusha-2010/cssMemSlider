@@ -77,6 +77,15 @@ body input {
     transition: all 0.8s ease;
 }
 
+.b1:active,
+.b2:active,
+.b3:active,
+.b4:active {
+    border: 0.25rem solid red;
+    background-color: red;
+    transition: all 0.5s ease;
+}
+
 #switch1:checked ~ .slider-wrapper .image-wrapper .s1 {
     margin-left: 0;
  }
