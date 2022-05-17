@@ -198,3 +198,9 @@ footer {
  #switch4:checked ~ footer .text-wrapper .text-all {
     transform: translateY(-5.3812rem);
  }
+
+ span {
+    display: block;
+    width: 100%;
+    height: 2.5rem;
+ }
